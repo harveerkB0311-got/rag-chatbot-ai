@@ -91,10 +91,3 @@ Response:
 }
 ```
 
-## Resume Bullet
-
-Built a Retrieval-Augmented Generation (RAG) chatbot using Python, FastAPI, and TF-IDF retrieval to answer user questions from a custom knowledge base through a REST API.
-
-## Recruiter Keywords
-
-RAG, AI Chatbot, Python, FastAPI, NLP, Retrieval System, Vector Search, REST API, Automation, Intelligent Document Processing.
