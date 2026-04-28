@@ -1,38 +1,100 @@
-# 🤖 RAG Chatbot AI (Retrieval-Augmented Generation)
+# RAG Chatbot AI Project
 
-A beginner-friendly AI chatbot that answers questions using a custom knowledge base.  
-Instead of guessing answers, it retrieves relevant information and responds intelligently.
+This is a beginner-friendly Retrieval-Augmented Generation (RAG) chatbot project.  
+It answers questions using a custom knowledge base instead of only relying on a general chatbot model.
 
----
+This project is useful for AI/ML, Backend Python, Automation, and AI Engineer roles.
 
-## 🚀 Features
+## What Is RAG?
 
-- Retrieval-Augmented Generation (RAG)
-- Custom knowledge base support
-- TF-IDF based semantic search
-- FastAPI backend for API access
-- No paid APIs required (fully local)
-- Easy to understand and extend
+RAG means Retrieval-Augmented Generation.  
+The chatbot first searches relevant documents, then uses those results to generate a helpful answer.
 
----
+## Tech Stack
 
-## 🧠 How It Works
+- Python
+- FastAPI
+- Scikit-learn
+- TF-IDF Vector Search
+- REST API
+- Custom Knowledge Base
 
-1. User asks a question  
-2. System searches relevant documents using TF-IDF  
-3. Retrieves the most relevant content  
-4. Generates an answer based on that content  
+## Features
 
----
+- Loads custom business knowledge documents
+- Finds the most relevant document using TF-IDF similarity
+- Returns chatbot-style answers
+- Provides REST API endpoint
+- GitHub-ready project structure
+- No paid OpenAI API required
 
-## 🛠️ Tech Stack
+## Project Structure
 
-- Python  
-- FastAPI  
-- Scikit-learn (TF-IDF, cosine similarity)  
-- Pydantic  
-- REST API  
+```text
+rag-chatbot-ai/
+├── api/
+│   └── app.py
+├── data/
+│   └── knowledge_base.txt
+├── src/
+│   ├── chatbot.py
+│   ├── retriever.py
+│   └── run_chatbot.py
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
 
----
+## How to Run
 
-## 📁 Project Structure
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Test chatbot in terminal
+
+```bash
+python src/run_chatbot.py
+```
+
+### 3. Run API
+
+```bash
+uvicorn api.app:app --reload
+```
+
+Open:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+## API Example
+
+Request:
+
+```json
+{
+  "question": "What is a loan approval model?"
+}
+```
+
+Response:
+
+```json
+{
+  "question": "What is a loan approval model?",
+  "answer": "Based on the knowledge base: A loan approval model predicts whether a loan application should be approved or rejected...",
+  "source": "A loan approval model predicts whether a loan application should be approved or rejected..."
+}
+```
+
+## Resume Bullet
+
+Built a Retrieval-Augmented Generation (RAG) chatbot using Python, FastAPI, and TF-IDF retrieval to answer user questions from a custom knowledge base through a REST API.
+
+## Recruiter Keywords
+
+RAG, AI Chatbot, Python, FastAPI, NLP, Retrieval System, Vector Search, REST API, Automation, Intelligent Document Processing.

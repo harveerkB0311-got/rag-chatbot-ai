@@ -1,0 +1,19 @@
+A loan approval model predicts whether a loan application should be approved or rejected based on applicant income, credit history, loan amount, employment status, and financial risk.
+
+Document classification is an AI technique used to automatically categorize documents such as invoices, contracts, bank statements, and identity documents.
+
+A RAG chatbot uses retrieval augmented generation to answer questions from a custom knowledge base. It searches relevant documents first and then creates an answer based on the retrieved content.
+
+FastAPI is a modern Python web framework used to build APIs quickly. It is commonly used in AI projects to expose machine learning models as REST API services.
+
+TF-IDF is a text vectorization technique that converts text into numerical features. It helps identify important words in documents and is useful for search and document retrieval.
+
+Data preprocessing is the process of cleaning and preparing raw data before using it in machine learning. It may include removing missing values, cleaning text, and transforming columns.
+
+Machine learning models learn patterns from data and use those patterns to make predictions. Common models include logistic regression, decision trees, random forests, and neural networks.
+
+Intelligent document processing uses AI to extract, classify, and analyze information from business documents. It is often used in banking, insurance, legal, and compliance workflows.
+
+REST APIs allow applications to communicate with each other. In AI systems, REST APIs can be used to send input data to a model and receive predictions.
+
+Model deployment means making a trained AI or machine learning model available for real users or applications in a production environment.
